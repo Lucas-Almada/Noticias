@@ -1,45 +1,31 @@
-	var maxnumero=3;
-	var numero=1;
+	var num=1;
+	var cargado=false;
+	var json1="";
+	var json2="";
+	var listaJson= [json1, json2];
+	var scrollactivate=true;
 
-	$(function () {
-		$(window).scroll(function () {
-			console.log("ScrollTop: "+ $(window).scrollTop()+
-			"\n alto ventana: " + $(window).height() +
-			"\n alto documento: " + $(document).height() +"\n");
-	
-		if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height()){
-			if (numero < 3) {
-			$.getJSON("" + numero + ".json", function(jsonObject) {
-				antiguo( jsonObject );
-			})
-			numero++
-			}else{
-				$('#btn').text('No hay más noticias');
-			};
-		};
-		});
-		$("#btn").click(function(){
-			cargar();
-			numero++;
-		});
-	});
-	
-	function cargar (){
-		$.getJSON("" + numero + ".json", function( jsonObject ){
-			antiguo( jsonObject );
-		});
-	};
-	
-	function antiguo(json){
-	
-			$.each( json, function( i, noticia ) {
-		$("#noticias").append
-		('<br>'+'<h2>' + noticia.title + '</h2>'+
-		'<div class="well"><div clas="container-fluid"> <img class="pimg" src="' + noticia.imgurl + '" alt="Noticias Anteriores" class="pimg">'+
-		'</img><p>' + noticia.content + '</p></div></div>'+'<br>')
-		}); 
-	
-};
+	$("#cargarmas").click(function(){
+        cargarNoticias();
+    });
+    
+    $("#botonscroll").click(function(){
+        if (scrollactivate){
+            scrollactivate=false;
+        } else {
+            scrollactivate=true;
+        }
+    });
+    
+    $(window).scroll(function () {
+        if (scrollactivate){
+                if ($(window).scrollTop() + $(window).height() == $(document).height()){
+                    cargarNoticias();
+                }
+        }
+    });
+});
+
 	var contador=1;
 	var Temporizador = setInterval(MyTimer, 1500);
 	var c=[];
