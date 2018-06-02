@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!--metadata-->
+	<meta charset="UTF-8">
+	<title>News of Legends</title>
+    <meta property="og:site_name" content="Noticias League of Legends">
+    <meta property="og:url" content="https://rawgit.com/Lucas-Almada/Noticias/master/Noticias.html">
+    <meta property="og:title" content="Noticias League of Legends">
+	<meta property="og:image" content="https://orig00.deviantart.net/bbba/f/2015/055/4/f/poro_icon_league_of_legends_by_rikkutenjouss-d8jc06j.png">
+<!--Links-->
+	<link rel="stylesheet" media='screen and (min-width: 961px)' href="C:\Users\Juan\Desktop\Noticia\css\d.css">
+	<link rel="stylesheet" media='screen and (max-width: 960px)' href="C:\Users\Juan\Desktop\Noticia\css\m.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="C:\Users\Juan\Desktop\Noticia\js\js.js"></script>
+	
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">News Of Legends</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+		</div>
+	</nav>
+		
+	<div class="jumbotron text-center">
+		<h1 style="color:red">News of Legends</h1>
+		<p style="color:yellow">La actualidad de League of Legends</p>
+	</div>
+	
+	<div id="fondo" class="container-fluid">
+        <div id="contenedor" class="container">
+            <div class="noticia">
+                <h1 style="color:blue">Clash: Escuchamos a los jugadores de EU</h1>
+                <img src="C:\Users\Juan\Desktop\Noticia\img\Clash.jpg" alt="imagen1"/>
+				<p style="color:white">Invocadores de EU:</p>
+				<p style="color:white">Tras la cancelación del torneo de Clash en Europa la tarde del viernes pasado debido a problemas técnicos, hemos recibido vuestros comentarios y somos conscientes de lo frustrante que ha sido para muchos que lo anunciásemos en el último minuto. Habíais organizado el fin de semana de acuerdo al torneo y estas noticias desmontaron todos vuestros planes. Entendemos que estéis molestos por que no os avisásemos con más antelación de que podía ser que Clash no saliera adelante.</p>
+				<p style="color:white">Estamos trabajando para mejorar y aceptamos las críticas porque son justas. A fin de cuentas, es verdad que el equipo editorial europeo había estado siguiendo las actualizaciones internas sobre las dificultades técnicas en otras regiones antes de que se anunciase la cancelación en nuestra región.</p>
+				<p style="color:white">Como creemos en la transparencia, vamos a ser sinceros y a reconocer que podríamos haberlo hecho mejor.</p>
+				<p style="color:white">¿Qué pasó?</p>
+				<p style="color:white">Cuando empezamos a observar problemas en el lanzamiento de Clash en Oceanía el viernes, varias horas antes de que se lanzase en nuestra región, el equipo de Europa empezó a monitorizar la situación y se unió a los chats internos en los que los ingenieros de Riot de todo el mundo trabajaban frenéticamente para localizar la raíz. Por desgracia, no se pudo encontrar el origen lo suficientemente rápido.</p>
+				<p style="color:white">Nos preguntamos si Clash podría estar estable a tiempo para la inscripción en Europa. Había cierto optimismo por parte de los que estaban trabajando en el problema técnico, y creían que quizás podría estar listo para funcionar en EU, así que teníamos la esperanza de que el error que se había detectado en las otras regiones estuviese resuelto a tiempo para que todo fuese según lo planeado para nosotros.</p>
+				<p style="color:white">Como ya sabéis, no salió bien, así que acabamos avisando de que Clash iba a posponerse el viernes por la tarde, poco antes de la hora programada de comienzo del evento. No queríamos decir que Clash se iba a cancelar para luego informaros de que al final habíamos conseguido solucionarlo y que íbamos a seguir adelante. El equipo de EU no quería que los jugadores recibiesen una información incorrecta y se fuesen del juego para que luego se enterasen de que podrían haber participado en el torneo y se perdiesen las recompensas y la progresión.</p>
+				<p style="color:white">Vamos a intentar aprender de esta experiencia para el futuro. Por eso, a pesar de haber mencionado al principio que quizás lo reanudaríamos el sábado, decidimos cancelarlo todo el fin de semana en lugar de dejaros esperando otra vez y con el riesgo de tener que posponerlo de nuevo, lo cual habría creado aún más inconvenientes entre los participantes.</p>
+				<p style="color:white">Respetamos vuestro tiempo personal y sabemos que todos estáis ocupados. Apreciamos que reservaseis tiempo para jugar a League of Legends. En el futuro, os avisaremos de este tipo de cosas con más antelación, y nos aseguraremos de que los jugadores de EU reciben la información correcta tan pronto como sea posible. Aunque sea solo para avisar de que la hora de lanzamiento puede verse afectada.</p>
+				<p style="color:white">Si os habéis perdido el anuncio sobre las compensaciones para los jugadores afectados, podéis leer el artículo "¿Qué va a pasar con Clash?". Para los interesados en saber qué pasó con más detalle, el equipo de Clash está trabajando en un análisis más exhaustivo a posteriori sobre los problemas que han afectado al lanzamiento. Lo publicaremos dentro de unos días.</p>
+				<iframe width="1349" height="480" src="https://www.youtube.com/embed/67h1iqqOW-A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>		
