@@ -1,19 +1,22 @@
-	var num=1;
-	var cargado=false;
-	var json1="";
-	var json2="";
-	var listaJson= [json1, json2];
-	var scrollactivate=true;
+var num=1;
+var cargado=false;
+var json1="https://github.com/Lucas-Almada/Noticias/blob/master/json/n1.json";
+var json2="https://github.com/Lucas-Almada/Noticias/blob/master/json/n2.json";
+var listaJson= [json1, json2];
+var scrollactivate=true;
+	
+$(document).ready(function() {
+	setInterval(cambiarImagen, 1500);
 
-	$("#cargarmas").click(function(){
-        cargarNoticias();
-    });
+$("#cargmas").click(function(){
+       cargarNoticias();
+});
     
-    $("#botonscroll").click(function(){
-        if (scrollactivate){
-            scrollactivate=false;
+$("#botonscroll").click(function(){
+	if (scrollactivate){
+        	scrollactivate=false;
         } else {
-            scrollactivate=true;
+        	scrollactivate=true;
         }
     });
     
@@ -22,19 +25,35 @@
                 if ($(window).scrollTop() + $(window).height() == $(document).height()){
                     cargarNoticias();
                 }
-        }
-    });
-});
-
-	var contador=1;
-	var Temporizador = setInterval(MyTimer, 1500);
-	var c=[];
-	c[0]="https://farm2.staticflickr.com/1513/25285783193_373241aeaa_c.jpg"
-	c[1]="http://1.bp.blogspot.com/-tHK4ztteVZc/T5XEDVPwCWI/AAAAAAAAApk/R6HEZVAr01s/s1600/wallpaper-1441835.jpg"
-	c[2]="http://www.v3wall.com/wallpaper/1920_1200/1502/1920_1200_20150212120317322658.jpg"
+			}
+		});
+	});
 	
-	function MyTimer() {
-		contador++;
-		$("#publi img").attr('src',c[contador-1]);;
-		if (contador==3) contador=0;
-	}
+	function cambiarImagen() {
+		if (num == 3) {
+			num = 1;
+		}else{
+			num++;
+		}
+	
+
+	function cargarnoticia() {
+		if (json == 2) {
+			$("#cargmas").html("Hasta aqui llegamos")
+			alert("Hasta aqui llegamos");
+			
+		}else{
+			if (cargado) {
+				$getJSON(listaJson[1] (jsonObject){
+					datos="<div class='row'> <div class='col-sm-4'> <div class='noticia'> <h1> " +jsonObject.noticias[0].title+ "</h1> <div class='text-center'> <img class='imagenNoticia1' src='"+jsonObject.noticias[0].imgurl+"'/> </div> <p>"+jsonObject.noticias[0].content+"</p> </div> </div> <div class='col-sm-4'> <div class='noticia'> <h1> " +jsonObject.noticias[1].title+ "</h1> <div class='text-center'> <img class='imagenNoticia1' src='"+jsonObject.noticias[1].imgurl+"'/> </div> <p>"+jsonObject.noticias[1].content+"</p> </div> </div> <div class='col-sm-4'> <div class='noticia'> <h1> " +jsonObject.noticias[2].title+ "</h1> <div class='text-center'> <img class='imagenNoticia1' src='"+jsonObject.noticias[2].imgurl+"'/> </div> <p>"+jsonObject.noticias[2].content+"</p> </div> </div> </div>;
+					$("#contenedornoticias").append(datos);
+				});
+			 } else {
+
+            $.getJSON(listaJson[0], function (jsonObject){
+                datos="<div class='row'> <div class='col-sm-4'> <div class='noticia'> <h1> " +jsonObject.noticias[0].title+ "</h1> <div class='text-center'> <img class='imagenNoticia1' src='"+jsonObject.noticias[0].imgurl+"'/> </div> <p>"+jsonObject.noticias[0].content+"</p> </div> </div> <div class='col-sm-4'> <div class='noticia'> <h1> " +jsonObject.noticias[1].title+ "</h1> <div class='text-center'> <img class='imagenNoticia1' src='"+jsonObject.noticias[1].imgurl+"'/> </div> <p>"+jsonObject.noticias[1].content+"</p> </div> </div> <div class='col-sm-4'> <div class='noticia'> <h1> " +jsonObject.noticias[2].title+ "</h1> <div class='text-center'> <img class='imagenNoticia1' src='"+jsonObject.noticias[2].imgurl+"'/> </div> <p>"+jsonObject.noticias[2].content+"</p> </div> </div> </div>";
+                $("#contenedornoticias").append(datos);
+                cargado=true;
+                json++;
+            });
+        }
