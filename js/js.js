@@ -1,7 +1,7 @@
 var num = 1;
 var cargado = false;
-var json1 = "https://github.com/Lucas-Almada/Noticias/blob/master/json/n1.json";
-var json2 = "https://github.com/Lucas-Almada/Noticias/blob/master/json/n2.json";
+var json1 = "https://rawgit.com/Lucas-Almada/Noticias/master/json/n1.json";
+var json2 = "https://rawgit.com/Lucas-Almada/Noticias/master/json/n2.json";
 var listaJson = [json1, json2];
 var scrollactivate = true;
 
