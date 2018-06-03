@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<noticias>
+    <noticia>
+        <titulo>Clash: Escuchamos a los jugadores de EU</titulo>
+        <descripcion>Lo que hemos aprendido de los anuncios sobre Clash del fin de semana pasado.</descripcion>
+        <img>
+            <imgmid>../img/clashf.jpg</imgmid>
+            <imgbig>../img/Clash.jpg</imgbig>
+        </img>
+        <pubDate>30/05/2018</pubDate>
+        <enlace>../noticia1.html</enlace>
+    </noticia>
+    <noticia>
+        <titulo>¡Pyke ya está disponible!</titulo>
+        <descripcion>Está aquí para destripar. Está aquí para hundiros. ¡Cuidado con el destripador! Pyke ya está disponible.</descripcion>
+        <img>
+            <imgmid>../img/pykef.jpg</imgmid>
+            <imgbig>../img/Pyke.jpg</imgbig>
+        </img>
+        <pubDate>31/05/2018</pubDate>
+        <enlace>../noticia2.html</enlace>
+    </noticia>
+</noticias>
+
+</rss>
