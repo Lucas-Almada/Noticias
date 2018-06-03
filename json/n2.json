@@ -1,17 +1,17 @@
 {"noticia":[
    {
       "title": "Desarrollo: Cambios a ARAM",
-      "imgurl": "aram.jpg",
+      "imgurl": "img/aram.jpg",
       "content": "Pronto llegarán cambios de calidad y otros de la experiencia de juego al Abismo de los Lamentos."
    },
    {
       "title": "Anuncio: Pyke, el Destripador de los Puertos",
-      "imgurl": "pykeinicio.jpg",
+      "imgurl": "img/pykeinicio.jpg",
       "content": "Cuando su tripulación lo abandonó a merced de los leviatanes, Pyke se hundió, pero decidió no morir."
    },
    {
       "title": "Desarrollo: Experiencia para nuevos jugadores",
-      "imgurl": "experiencia.jpg",
+      "imgurl": "img/experiencia.jpg",
       "content": "Cambiamos el tutorial (y otras cosas) para que los nuevos jugadores vean la diversión de LoL."
    }
 ]}
