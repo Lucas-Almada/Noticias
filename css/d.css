@@ -1,13 +1,1 @@
-	body{
-			background-image: url("https://thegamersports.mundodeportivo.com/wp-content/uploads/2016/10/environmentart-sru-04_1920.jpg");
-			background-size: 100% 100%;
-			background-color: black;
-	}
-	
-.jumbotron{
-	background: url("https://www.gamespew.com/wp-content/uploads/2017/03/League-of-Legends-1-1400x600.jpg");
-	background-repeat: no-repeat;
-	}
-.noticia{
-	background-color: rgba(209, 209, 209, 0.71)
-}
+body{background-image: url("https://thegamersports.mundodeportivo.com/wp-content/uploads/2016/10/environmentart-sru-04_1920.jpg");background-size: 100% 100%;background-color: black;}.jumbotron{background: url("https://www.gamespew.com/wp-content/uploads/2017/03/League-of-Legends-1-1400x600.jpg");background-repeat: no-repeat;}.noticia{background-color: rgba(209, 209, 209, 0.71)}
