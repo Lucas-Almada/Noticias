@@ -50,6 +50,7 @@ function cargarnoticia() {
 			$.getJSON(listaJson[1], function(jsonObject){
 				datos = "<div class='row'> <div class='col-sm-4'> <div class='noticia'> <h1> " + jsonObject.noticia[0].title + "</h1> <div class='text-center'> <img class='imagenNoticia1' src='" + jsonObject.noticia[0].imgurl + "'/> </div> <p>" + jsonObject.noticia[0].content + "</p> </div> </div> <div class='col-sm-4'> <div class='noticia'> <h1> " + jsonObject.noticia[1].title + "</h1> <div class='text-center'> <img class='imagenNoticia1' src='" + jsonObject.noticia[1].imgurl + "'/> </div> <p>" + jsonObject.noticia[1].content + "</p> </div> </div> <div class='col-sm-4'> <div class='noticia'> <h1> " + jsonObject.noticia[2].title + "</h1> <div class='text-center'> <img class='imagenNoticia1' src='" + jsonObject.noticia[2].imgurl + "'/> </div> <p>" + jsonObject.noticia[2].content + "</p> </div> </div> </div>";
 				$("#contenedornoticias").append(datos);
+				json++;
 			});
 		} else {
 
